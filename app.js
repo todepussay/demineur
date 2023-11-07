@@ -318,7 +318,7 @@ function clickCell(cell){
         startTimer();
         createBomb(cell);
         createGridNumber(cell);
-    } else if(!game_over) {
+    } else if(!game_over && !cell.classList.contains("flag")) {
 
         let {x, y} = getCoordinates(cell);
 
