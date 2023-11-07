@@ -22,6 +22,13 @@ select.addEventListener('change', function(){
     createGrid();
 });
 
+document.addEventListener('keyup', function(e){
+    if(e.key == "R" || e.key == "r"){
+        resetFunction();
+        createGrid();
+    }
+})
+
 function createGrid(){
 
     if(select.value == "easy"){
